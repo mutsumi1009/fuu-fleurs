@@ -505,6 +505,34 @@ a {
             rgba(251, 248, 242, 0.12) 100%);
 }
 
+.hero__slide--chandelier::before {
+    background: linear-gradient(
+        90deg,
+        rgba(251, 248, 242, 0.82) 0%,
+        rgba(251, 248, 242, 0.55) 25%,
+        rgba(251, 248, 242, 0.12) 48%,
+        rgba(251, 248, 242, 0) 65%
+    );
+}
+
+@media screen and (max-width: 767px) {
+    .hero__slide--chandelier::before {
+        background: linear-gradient(
+            90deg,
+            rgba(251, 248, 242, 0.96) 0%,
+            rgba(251, 248, 242, 0.82) 42%,
+            rgba(251, 248, 242, 0.3) 72%,
+            rgba(251, 248, 242, 0) 100%
+        );
+    }
+}
+
+.hero__slide img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
 .hero__slide img {
     height: 100%;
     object-fit: cover;
