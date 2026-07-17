@@ -19,42 +19,43 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="top">
+  <header class="header">
+    <a href="#top" class="logo-area" aria-label="fuu fleurs">
+      <img src="./images/fuu_fleurs_logo.png" alt="fuu fleursロゴ" class="logo-img">
+    </a>
+
+    <nav class="pc-nav" aria-label="グローバルナビゲーション">
+      <a href="#concept">Concept</a>
+      <a href="#menu">Menu</a>
+      <a href="#stylist">Stylist</a>
+      <a href="#access">Access</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-box" id="js-hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+    </button>
+
+    <nav class="sp-nav" id="js-navigation" aria-label="スマホナビゲーション">
+      <a href="#concept">Concept</a>
+      <a href="#menu">Menu</a>
+      <a href="#stylist">Stylist</a>
+      <a href="#access">Access</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main class="page">
-    <header class="header">
-      <a href="#" class="logo-area" aria-label="fuu fleurs">
-        <img src="./images/fuu_fleurs_logo.png" alt="fuu fleursロゴ" class="logo-img">
-      </a>
-
-      <nav class="pc-nav" aria-label="グローバルナビゲーション">
-        <a href="#concept">Concept</a>
-        <a href="#menu">Menu</a>
-        <a href="#stylist">Stylist</a>
-        <a href="#access">Access</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="menu-box" id="js-hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
-        <span></span>
-      </button>
-
-      <nav class="sp-nav" id="js-navigation" aria-label="スマホナビゲーション">
-        <a href="#concept">Concept</a>
-        <a href="#menu">Menu</a>
-        <a href="#stylist">Stylist</a>
-        <a href="#access">Access</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
     <!-- fv -->
     <section class="hero">
       <div class="hero__slider js-hero-slider">
-        <div class="hero__slide">
-          <img src="./images/fv-slide01.webp" alt="やわらかな光に包まれた花畑">
-        </div>
         <div class="hero__slide hero__slide--chandelier">
-          <img src="./images/fv-slide02.webp" alt="ドライフラワーシャンデリアのあるサロン空間">        </div>
+          <img src="./images/fv-slide01.webp" alt="海を背景にしたロングヘアの女性の後ろ姿">
+        </div>
+        <div class="hero__slide">
+          <img src="./images/fv-slide02.webp" alt="やわらかな光に包まれた花畑">
+        </div>
       </div>
 
       <div class="hero-content">
@@ -160,14 +161,14 @@
 
         <p class="menu-note">
           料金は髪の長さや施術内容により異なります。<br>
-          詳細はInstagramまたはLINEにてご確認ください。
+          詳細はInstagramまたはLINEにて<br class="menu-note-br">ご確認ください。
         </p>
 
         <div class="menu-sns-links">
-          <a class="button button-instagram" href="https://www.instagram.com/fuufleurs/" aria-label="Instagramを見る">
+          <a class="button button-instagram" href="https://www.instagram.com/fuufleurs/" target="_blank" rel="noopener noreferrer" aria-label="Instagramを見る">
             Instagramを見る
           </a>
-          <a class="button button-line" href="https://lin.ee/rGV6Q77" aria-label="LINEで予約する">
+          <a class="button button-line" href="https://lin.ee/rGV6Q77" target="_blank" rel="noopener noreferrer" aria-label="LINEで予約する">
             LINEで予約する
           </a>
         </div>
@@ -188,7 +189,7 @@
             <p class="owner-name">Owner / Stylist</p>
             <p class="section-text">
               カウンセリングから仕上げまで、最初から最後まで丁寧に担当します。髪のこと、頭皮のこと、お肌のこと。年齢とともに変化するお悩みも、安心してご相談ください。<br>
-              初めての方も, どうぞお気軽にご相談ください。
+              初めての方も、どうぞお気軽にご相談ください。
             </p>
           </div>
         </div>
@@ -203,7 +204,7 @@
         <div class="access-table">
           <div class="access-row">
             <div class="access-head">住所</div>
-            <div class="access-body">〒903-0117<br class="sp-br">沖縄県中頭郡西原町翁長５６２−１</div>
+            <div class="access-body">〒903-0117<br>沖縄県中頭郡西原町翁長５６２−１</div>
           </div>
 
           <div class="access-row">
@@ -213,7 +214,7 @@
 
           <div class="access-row">
             <div class="access-head">駐車場</div>
-            <div class="access-body">店舗前に2台分の駐車スペースが<br class="sp-br">ございます。</div>
+            <div class="access-body"><span>店舗前に2台分の駐車スペースが</span><span>ございます。</span></div>
           </div>
 
           <div class="access-row">
@@ -247,37 +248,45 @@
         <p class="section-label">Contact</p>
         <h2 class="section-title">ご予約・ご相談は<br>LINEから。</h2>
         <p class="contact-text">
-          <span>施術中は返信にお時間をいただく場合がございます。</span>
-          <span>髪や頭皮のお悩みも、LINEからお気軽にご相談ください。</span>
+          <span>施術中は返信にお時間をいただく<br class="sp-br">場合がございます。</span>
+          <span>髪や頭皮のお悩みも、LINEから<br class="sp-br">お気軽にご相談ください。</span>
         </p>
-        <a class="button button-line" href="https://lin.ee/rGV6Q77">LINEで相談・予約する</a>
+        <a class="button button-line" href="https://lin.ee/rGV6Q77" target="_blank" rel="noopener noreferrer">LINEで相談・予約する</a>
       </div>
     </section>
 
-    <!-- footer-->
-    <footer class="footer">
-      <div class="inner">
-        <div class="footer-logo-area">
-          <img src="./images/fuu_fleurs_logo_white.png" alt="fuu fleursロゴ" class="footer-logo-img">
-        </div>
-        <div class="footer-sns" aria-label="SNSリンク">
-          <a href="https://www.instagram.com/fuufleurs/" class="footer-sns__link footer-sns__link--instagram"
-            aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <span class="footer-sns__icon footer-sns__icon--instagram" aria-hidden="true"></span>
-          </a>
-
-          <a href="https://lin.ee/rGV6Q77" class="footer-sns__link footer-sns__link--line" aria-label="LINE" target="_blank" rel="noopener noreferrer">
-            LINE
-          </a>
-        </div>
-        <div class="footer-nav">
-          <span>Concept</span><span>Menu</span><span>Stylist</span><span>Access</span><span>Contact</span>
-        </div>
-        <p class="copy">© fuu fleurs</p>
-      </div>
-    </footer>
-
   </main>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer-logo-area">
+        <a href="#top" class="footer-logo-link">
+          <img src="./images/fuu_fleurs_logo_white.png" alt="fuu fleursロゴ" class="footer-logo-img">
+        </a>
+      </div>
+      <div class="footer-sns" aria-label="SNSリンク">
+        <a href="https://www.instagram.com/fuufleurs/" class="footer-sns__link footer-sns__link--instagram"
+          aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <span class="footer-sns__icon footer-sns__icon--instagram" aria-hidden="true"></span>
+        </a>
+
+        <a href="https://lin.ee/rGV6Q77" class="footer-sns__link footer-sns__link--line" aria-label="LINE"
+          target="_blank" rel="noopener noreferrer">
+          LINE
+        </a>
+      </div>
+      <div class="footer-nav">
+        <a href="#concept">Concept</a>
+        <a href="#menu">Menu</a>
+        <a href="#stylist">Stylist</a>
+        <a href="#access">Access</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copy">© fuu fleurs</p>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/script.js"></script>
