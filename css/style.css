@@ -506,31 +506,21 @@ a {
 }
 
 .hero__slide--chandelier::before {
-    background: linear-gradient(
-        90deg,
-        rgba(251, 248, 242, 0.82) 0%,
-        rgba(251, 248, 242, 0.55) 25%,
-        rgba(251, 248, 242, 0.12) 48%,
-        rgba(251, 248, 242, 0) 65%
-    );
+    background: linear-gradient(90deg,
+            rgba(251, 248, 242, 0.82) 0%,
+            rgba(251, 248, 242, 0.55) 25%,
+            rgba(251, 248, 242, 0.12) 48%,
+            rgba(251, 248, 242, 0) 65%);
 }
 
 @media screen and (max-width: 767px) {
     .hero__slide--chandelier::before {
-        background: linear-gradient(
-            90deg,
-            rgba(251, 248, 242, 0.96) 0%,
-            rgba(251, 248, 242, 0.82) 42%,
-            rgba(251, 248, 242, 0.3) 72%,
-            rgba(251, 248, 242, 0) 100%
-        );
+        background: linear-gradient(90deg,
+                rgba(251, 248, 242, 0.96) 0%,
+                rgba(251, 248, 242, 0.82) 42%,
+                rgba(251, 248, 242, 0.3) 72%,
+                rgba(251, 248, 242, 0) 100%);
     }
-}
-
-.hero__slide img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center right;
 }
 
 .hero__slide img {
@@ -541,21 +531,27 @@ a {
 
 /* 2枚目のスライド（シャンデリア）のみ調整 */
 @media screen and (max-width: 767px) {
-  .hero__slide--chandelier img {
-    object-position: 25% center;
-  }
+    .hero__slide--chandelier img {
+        object-position: 25% center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero__slide--chandelier img {
+        object-position: 65% center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
-  .hero__slide--chandelier img {
-    object-position: 30% center;
-  }
+    .hero__slide--chandelier img {
+        object-position: 30% center;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-  .hero__slide--chandelier img {
-    object-position: 35% center;
-  }
+    .hero__slide--chandelier img {
+        object-position: 35% center;
+    }
 }
 
 .hero-content {
@@ -692,14 +688,14 @@ a {
   Concept
 ========================= */
 .concept {
-    background-color: var(--cream);
+    background-color: var(--cream-2);
 }
 
 /* =========================
   Menu
 ========================= */
 .service-section {
-    background-color: var(--cream-2);
+    background-color: var(--cream);
 }
 
 .service-list {
@@ -863,6 +859,30 @@ a {
     text-align: center;
 }
 
+.menu-note-br {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-note {
+        width: fit-content;
+        margin-inline: auto;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menu-note-br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .service-section .inner {
+        padding-inline: 1.2rem;
+    }
+}
+
 .menu-sns-links {
     display: flex;
     flex-direction: column;
@@ -894,7 +914,7 @@ a {
   Owner
 ========================= */
 .owner-section {
-    background-color: var(--cream);
+    background-color: var(--cream-2);
 }
 
 .owner-name {
@@ -919,16 +939,18 @@ a {
   Reservation
 ========================= */
 .reservation {
-    background: url("../images/contact.webp") center / cover;
+    /* background-color: #b2a396; */
+    /* background-color: #9E968F; */
+    background-color: #AAA29B;
     text-align: center;
 }
 
 .reservation::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    /* background: rgba(251, 248, 242, 0.45); */
-    z-index: 0;
+    display: none;
+}
+
+.reservation .contact-text {
+    color: #fff;
 }
 
 .reservation>* {
@@ -958,14 +980,11 @@ a {
 
 @media screen and (max-width: 767px) {
     .contact-text {
-     
         font-size: 14px;
-         max-width: calc(100% - 40px); 
+        max-width: calc(100% - 40px);
     }
-    
-    .contact-text span:first-child {
-        white-space: nowrap;
-    }
+
+
 }
 
 
@@ -973,7 +992,7 @@ a {
   Access
 ========================= */
 .access {
-    background-color: var(--cream-2);
+    background-color: var(--cream);
 }
 
 .access-table {
@@ -1019,6 +1038,10 @@ a {
     color: var(--muted);
 }
 
+.access-body span {
+    display: inline-block;
+}
+
 .tel-link {
     color: inherit;
     text-decoration: none;
@@ -1041,13 +1064,46 @@ a {
     display: block;
 }
 
+@media screen and (min-width: 900px) {
+    .access .inner {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 0 48px;
+        align-items: start;
+    }
+
+    .access .section-label,
+    .access .section-title {
+        grid-column: 1 / -1;
+    }
+
+    .access .access-table {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .access .map-box {
+        height: 380px;
+    }
+}
+
 /* =========================
   Footer
 ========================= */
 .footer {
     padding: 36px 0 32px;
-    background-color: #bfd8ca;
+    background:
+        linear-gradient(rgba(247, 241, 237, 0.65),
+            rgba(247, 241, 237, 0.65)),
+        url("../images/footer.webp") no-repeat center 30% / cover;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-position: center, center 10%;
+        padding: 52px 0 48px;
+    }
 }
 
 .footer-logo-area {
@@ -1078,36 +1134,37 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 14px;
     margin: 0 0 18px;
 }
 
 .footer-sns__link {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: rgba(255, 255, 255, 0.62);
+    background: rgba(255, 255, 255, 0.92);
     color: var(--brown);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0;
-    border: 1px solid rgba(64, 53, 47, 0.12);
+    border: 1px solid rgba(64, 53, 47, 0.24);
+    box-shadow: 0 2px 8px rgba(64, 53, 47, 0.08);
 }
 
 .footer-sns__icon--instagram {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    background-color: #d7a7a0;
+    background-color: #c78172;
     mask: url("../images/instagram-icon.png") center / contain no-repeat;
     -webkit-mask: url("../images/instagram-icon.png") center / contain no-repeat;
 }
 
 .footer-sns__link--line {
     color: var(--green-dark);
-    font-size: 8px;
+    font-size: 11px;
 }
 
 .footer-logo-text {
@@ -1124,13 +1181,13 @@ a {
     gap: 12px;
     margin: 16px 0;
     font-size: 12px;
-    color: var(--muted);
+    color: var(--brown);
     flex-wrap: wrap;
 }
 
 .copy {
     font-size: 11px;
-    color: #9d928a;
+    color: var(--brown);
 }
 
 /* =========================
