@@ -1180,14 +1180,16 @@ a {
     justify-content: center;
     gap: 12px;
     margin: 16px 0;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--brown);
     flex-wrap: wrap;
+    font-weight: 500;
 }
 
 .copy {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--brown);
+    font-weight: 500;
 }
 
 /* =========================
