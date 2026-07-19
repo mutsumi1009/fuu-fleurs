@@ -417,7 +417,7 @@ a {
     background: rgba(251, 248, 242, 0.96);
     border-bottom: 1px solid var(--line);
     z-index: 40;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -505,7 +505,7 @@ a {
             rgba(251, 248, 242, 0.12) 100%);
 }
 
-.hero__slide--chandelier::before {
+.hero__slide--woman::before {
     background: linear-gradient(90deg,
             rgba(251, 248, 242, 0.82) 0%,
             rgba(251, 248, 242, 0.55) 25%,
@@ -514,7 +514,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-    .hero__slide--chandelier::before {
+    .hero__slide--woman::before {
         background: linear-gradient(90deg,
                 rgba(251, 248, 242, 0.96) 0%,
                 rgba(251, 248, 242, 0.82) 42%,
@@ -529,27 +529,27 @@ a {
     object-position: center right;
 }
 
-/* 2枚目のスライド（シャンデリア）のみ調整 */
+/* 女性画像のみ表示位置を調整 */
 @media screen and (max-width: 767px) {
-    .hero__slide--chandelier img {
+    .hero__slide--woman img {
         object-position: 25% center;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .hero__slide--chandelier img {
+    .hero__slide--woman img {
         object-position: 65% center;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
-    .hero__slide--chandelier img {
+    .hero__slide--woman img {
         object-position: 30% center;
     }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-    .hero__slide--chandelier img {
+    .hero__slide--woman img {
         object-position: 35% center;
     }
 }
