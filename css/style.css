@@ -671,7 +671,7 @@ a {
     .profile-card {
         flex-direction: row;
         align-items: flex-start;
-        gap: 97px;
+        gap: 60px;
     }
 
     .profile-image {
