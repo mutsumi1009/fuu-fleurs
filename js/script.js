@@ -1,19 +1,20 @@
 $(function () {
     // --- FVスライダー ---
-    $(".js-hero-slider").slick({
-        autoplay: true,
-        autoplaySpeed: 3500,
-        speed: 1400,
-        fade: true,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-    });
+    if ($.fn.slick) {
+        $(".js-hero-slider").slick({
+            autoplay: true,
+            autoplaySpeed: 3500,
+            speed: 1400,
+            fade: true,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+        });
+    }
 
     const $hamburger = $("#js-hamburger");
     const $nav = $("#js-navigation");
-    const headerHeight = 68;
 
     function closeHamburger(immediate) {
         $hamburger.removeClass("is-open");
@@ -66,6 +67,8 @@ $(function () {
 
         closeHamburger();
 
+        const headerHeight = $(".header").outerHeight() || 68;
+
         $("html, body").stop().animate(
             {
                 scrollTop: $target.offset().top - headerHeight
@@ -80,11 +83,4 @@ $(function () {
             closeHamburger(true);
         }
     });
-
-    // --- スクロール幅デバッグ ---
-    function checkScrollWidth() {
-        console.log("【デバッグ】scrollWidth:", document.documentElement.scrollWidth, "clientWidth:", document.documentElement.clientWidth);
-    }
-    checkScrollWidth();
-    $(window).on("resize", checkScrollWidth);
 });

@@ -218,8 +218,14 @@ a {
     height: 18px;
     display: inline-block;
     background-color: #d7a7a0;
-    mask: url("../images/instagram-icon.png") center / contain no-repeat;
-    -webkit-mask: url("../images/instagram-icon.png") center / contain no-repeat;
+    mask-image: url("../images/instagram-icon.png");
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/instagram-icon.png");
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
     flex-shrink: 0;
     border: none;
     border-radius: 0;
@@ -344,9 +350,11 @@ a {
         transition: transform 0.3s ease;
     }
 
-    .pc-nav a:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
+    @media (hover: hover) {
+        .pc-nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
     }
 }
 
@@ -454,9 +462,11 @@ a {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.sp-nav a:hover {
-    color: var(--green-dark);
-    background-color: rgba(169, 211, 193, 0.24);
+@media (hover: hover) {
+    .sp-nav a:hover {
+        color: var(--green-dark);
+        background-color: rgba(169, 211, 193, 0.24);
+    }
 }
 
 /* =========================
@@ -538,7 +548,14 @@ a {
 
 @media screen and (max-width: 500px) {
     .hero__slide--woman img {
-        object-position: 65% center;
+        object-position: 60% center;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .hero__slide--woman img {
+        object-position: 55% center;
     }
 }
 
@@ -1058,9 +1075,10 @@ a {
     font-weight: 700;
 }
 
-.map-box iframe {
+.access iframe {
     width: 100%;
     height: 100%;
+    border: 0;
     display: block;
 }
 
@@ -1092,16 +1110,12 @@ a {
 ========================= */
 .footer {
     padding: 36px 0 32px;
-    background:
-        linear-gradient(rgba(247, 241, 237, 0.65),
-            rgba(247, 241, 237, 0.65)),
-        url("../images/footer.webp") no-repeat center 30% / cover;
+    background-color: #bfd8ca;
     text-align: center;
 }
 
 @media screen and (min-width: 768px) {
     .footer {
-        background-position: center, center 10%;
         padding: 52px 0 48px;
     }
 }
@@ -1158,8 +1172,14 @@ a {
     height: 20px;
     display: inline-block;
     background-color: #c78172;
-    mask: url("../images/instagram-icon.png") center / contain no-repeat;
-    -webkit-mask: url("../images/instagram-icon.png") center / contain no-repeat;
+    mask-image: url("../images/instagram-icon.png");
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("../images/instagram-icon.png");
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .footer-sns__link--line {
@@ -1180,10 +1200,14 @@ a {
     justify-content: center;
     gap: 12px;
     margin: 16px 0;
+    font-family: "Cormorant Garamond", serif;
     font-size: 14px;
     color: var(--brown);
     flex-wrap: wrap;
-    font-weight: 500;
+}
+
+.footer-nav a {
+    color: var(--brown);
 }
 
 .copy {
@@ -1209,4 +1233,15 @@ a {
     height: 48px;
     max-width: 350px;
     margin: 0 auto;
+}
+
+/* =========================
+  Accessibility (Focus styles)
+========================= */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 2px solid var(--green-dark);
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px rgba(103, 141, 122, 0.2);
 }
