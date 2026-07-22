@@ -489,6 +489,12 @@ a {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-height: clamp(720px, 48vw, 840px);
+    }
+}
+
 .hero__slider {
     position: absolute;
     inset: 0;
@@ -568,6 +574,12 @@ a {
 @media screen and (min-width: 900px) and (max-width: 1199px) {
     .hero__slide--woman img {
         object-position: 35% center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__slide--woman img {
+        object-position: 38% 25%;
     }
 }
 
@@ -956,9 +968,8 @@ a {
   Reservation
 ========================= */
 .reservation {
-    /* background-color: #b2a396; */
-    /* background-color: #9E968F; */
-    background-color: #AAA29B;
+    /* background-color: #D5CCC4; */
+    background-color: #DCCFCB;
     text-align: center;
 }
 
@@ -967,7 +978,7 @@ a {
 }
 
 .reservation .contact-text {
-    color: #fff;
+    color: var(--text);
 }
 
 .reservation>* {
@@ -1110,7 +1121,7 @@ a {
 ========================= */
 .footer {
     padding: 36px 0 32px;
-    background-color: #bfd8ca;
+    background-color: #625A55;
     text-align: center;
 }
 
@@ -1202,17 +1213,17 @@ a {
     margin: 16px 0;
     font-family: "Cormorant Garamond", serif;
     font-size: 14px;
-    color: var(--brown);
+    color: #f7f1ed;
     flex-wrap: wrap;
 }
 
 .footer-nav a {
-    color: var(--brown);
+    color: #f7f1ed;
 }
 
 .copy {
     font-size: 13px;
-    color: var(--brown);
+    color: #f7f1ed;
     font-weight: 500;
 }
 
