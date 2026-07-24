@@ -645,30 +645,6 @@ a {
     }
 }
 
-.slider-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 24px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    z-index: 2;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: 1px solid var(--green-deep);
-    background: transparent;
-    display: block;
-}
-
-.dot.is-active {
-    background: var(--green-deep);
-}
-
 /* =========================
   Profile Card (Concept & Stylist)
 ========================= */
@@ -679,8 +655,6 @@ a {
 }
 
 .profile-image {
-    /* width: 100%;
-    height: 260px; */
     overflow: hidden;
     box-shadow: 0 16px 36px rgba(92, 74, 55, 0.12);
 }
@@ -731,7 +705,6 @@ a {
     display: grid;
     gap: 16px;
     margin-top: 26px;
-    /* grid-auto-rows: 1fr; */
 }
 
 /* PC: 3 columns layout starting at 900px */
@@ -1006,10 +979,7 @@ a {
         font-size: 14px;
         max-width: calc(100% - 40px);
     }
-
-
 }
-
 
 /* =========================
   Access
