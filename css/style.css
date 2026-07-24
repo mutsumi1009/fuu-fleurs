@@ -976,10 +976,6 @@ a {
     display: none;
 }
 
-.reservation .contact-text {
-    color: var(--text);
-}
-
 .reservation>* {
     position: relative;
     z-index: 1;
