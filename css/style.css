@@ -1488,6 +1488,7 @@ a {
 .access-content {
     margin-top: 30px;
 }
+
 @media screen and (min-width: 900px) {
     .access-content {
         margin-top: 40px;
@@ -1503,6 +1504,7 @@ a {
     margin-bottom: 24px;
     font-size: 13px;
 }
+
 @media screen and (min-width: 900px) {
     .access-table {
         margin-bottom: 0;
@@ -1557,6 +1559,7 @@ a {
     white-space: nowrap;
     display: inline-block;
 }
+
 @media screen and (min-width: 900px) {
     .access-body .tel-link {
         display: none;
@@ -1566,6 +1569,7 @@ a {
 .access-body .tel-text {
     display: none;
 }
+
 @media screen and (min-width: 900px) {
     .access-body .tel-text {
         display: inline-block;
@@ -1750,6 +1754,12 @@ a {
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+    .footer-nav {
+        gap: 12px 14px;
+    }
+}
+
 .footer-nav a {
     color: #f7f1ed;
 }
@@ -1837,7 +1847,7 @@ a {
         bottom: 30px;
         right: 30px;
     }
-    
+
     .page-top-btn:hover {
         transform: translateY(-4px);
         border-color: var(--green-dark);
@@ -1856,9 +1866,11 @@ a {
         transition: opacity 0.2s ease;
         transform: none !important;
     }
+
     .page-top-btn.is-visible {
         transform: none !important;
     }
+
     .page-top-btn:hover {
         transform: none !important;
     }
