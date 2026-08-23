@@ -1069,10 +1069,6 @@ a {
     }
 }
 
-/* .concept-feature-title span {
-    display: inline-block;
-} */
-
 .concept-btn-wrapper.button-row {
     margin-inline: auto;
     margin-top: 48px;
@@ -1388,14 +1384,11 @@ a {
 
 @media screen and (min-width: 900px) {
     .profile-image {
-        /* flex: 0 0 420px; */
         height: 350px;
     }
 }
 
 .profile-image img {
-    /* width: 100%; */
-    /* height: 100%; */
     object-fit: cover;
 }
 
