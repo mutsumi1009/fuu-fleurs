@@ -50,7 +50,7 @@ $(function () {
         }
     });
 
-    $("#js-navigation a, .pc-nav a, .button[href^='#']").on("click", function (e) {
+    $("#js-navigation a, .pc-nav a, .header-btn-line, .button[href^='#'], .page-top-btn").on("click", function (e) {
         const href = $(this).attr("href");
 
         if (!href || !href.startsWith("#") || href === "#") {
@@ -73,10 +73,25 @@ $(function () {
             {
                 scrollTop: $target.offset().top - headerHeight
             },
-            1200,
+            1500,
             "swing"
         );
     });
+
+    // --- ページトップボタンの制御 ---
+    const $window = $(window);
+    const $pageTopBtn = $(".page-top-btn");
+
+    function togglePageTopBtn() {
+        if ($window.scrollTop() > 300) {
+            $pageTopBtn.addClass("is-visible");
+        } else {
+            $pageTopBtn.removeClass("is-visible");
+        }
+    }
+
+    $window.on("scroll", togglePageTopBtn);
+    togglePageTopBtn(); // 初期化時にスクロール位置を判定
 
     $(window).on("resize", function () {
         if (window.innerWidth >= 768) {

@@ -26,24 +26,28 @@
       <img src="./images/fuu_fleurs_logo.png" alt="fuu fleursロゴ" class="logo-img">
     </a>
 
-    <nav class="pc-nav" aria-label="グローバルナビゲーション">
-      <a href="#concept">Concept</a>
-      <a href="#menu">Menu</a>
-      <a href="#stylist">Stylist</a>
-      <a href="#access">Access</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-right">
+      <nav class="pc-nav" aria-label="グローバルナビゲーション">
+        <a href="#concept">サロンについて</a>
+        <a href="#menu">メニュー・料金</a>
+        <a href="#stylist">スタイリスト</a>
+        <a href="#salon">サロン紹介</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">ご予約・相談</a>
+      </nav>
+    </div>
 
     <button class="menu-box" id="js-hamburger" type="button" aria-label="メニューを開く" aria-expanded="false">
       <span></span>
     </button>
 
     <nav class="sp-nav" id="js-navigation" aria-label="スマホナビゲーション">
-      <a href="#concept">Concept</a>
-      <a href="#menu">Menu</a>
-      <a href="#stylist">Stylist</a>
-      <a href="#access">Access</a>
-      <a href="#contact">Contact</a>
+      <a href="#concept">サロンについて</a>
+      <a href="#menu">メニュー・料金</a>
+      <a href="#stylist">スタイリスト</a>
+      <a href="#salon">サロン紹介</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">ご予約・相談</a>
     </nav>
   </header>
 
@@ -77,23 +81,105 @@
       </div>
     </section>
 
+    <!-- trouble -->
+    <section class="section trouble">
+      <div class="inner">    
+        <h2 class="trouble-title">こんなお悩みありませんか？</h2>
+        <ul class="trouble-list">
+          <li class="trouble-item">
+            <span class="trouble-icon" aria-hidden="true">
+              <img src="images/trouble-flower-01.png" alt="">
+            </span>
+            <p class="trouble-text">大型サロンのにぎやかな<br>雰囲気が苦手</p>
+          </li>
+          <li class="trouble-item">
+            <span class="trouble-icon" aria-hidden="true">
+              <img src="images/trouble-flower-02.png" alt="">
+            </span>
+            <p class="trouble-text">髪の悩みをゆっくり<br>相談したい</p>
+          </li>
+          <li class="trouble-item">
+            <span class="trouble-icon" aria-hidden="true">
+              <img src="images/trouble-flower-03.png" alt="">
+            </span>
+            <p class="trouble-text">年齢とともに髪や頭皮の<br>変化が気になってきた</p>
+          </li>
+          <li class="trouble-item">
+            <span class="trouble-icon" aria-hidden="true">
+              <img src="images/trouble-flower-04.png" alt="">
+            </span>
+            <p class="trouble-text">周りを気にせず、落ち着いた<br>空間で過ごしたい</p>
+          </li>
+        </ul>
+        
+        <div class="trouble-footer">
+          <p class="trouble-lead">そんなお悩みは、fuu fleursにお任せください。</p>
+        </div>
+      </div>
+    </section>
+
     <!-- concept-->
     <section class="section concept" id="concept">
       <div class="inner">
-        <div class="profile-card">
-          <div class="profile-image concept-image">
-            <img src="./images/concept.webp" alt="サロンの雰囲気">
-          </div>
-
-          <div class="profile-content concept-content">
-            <p class="section-label">Concept</p>
-            <h2 class="section-title">大人女性の「今」と<br>「これから」に寄り添う。</h2>
-            <p class="section-text">
-              エイジレスビューティー。<br>
-              年齢にとらわれないあなたらしい美しさを追求して、髪、頭皮、スキンケア、インナービューティーまでトータルにサポート。<br>
+        <h2 class="concept-heading">
+          <span class="section-label concept-heading__en">fuu fleurs</span>
+          <span class="section-title concept-heading__ja">について</span>
+        </h2>
+        
+        <!-- リード文エリア -->
+        <div class="concept-lead-area">
+          <p class="concept-lead-title">
+            <span>大人女性の「今」と</span><span>「これから」に寄り添う。</span>
+          </p>
+          <div class="concept-lead-text">
+            <p class="concept-lead-paragraph">
+              <span class="inline-block">エイジレスビューティー。</span>
+            </p>
+            <p class="concept-lead-paragraph">
+              <span class="inline-block">年齢にとらわれない</span><span class="inline-block">あなたらしい美しさを</span><span class="inline-block">追求して、</span><br class="pc-br"><span class="inline-block">髪、頭皮、</span><span class="inline-block">スキンケア、</span><span class="inline-block">インナービューティーまで</span><span class="inline-block">トータルに</span><span class="inline-block">サポート。</span>
+            </p>
+            <p class="concept-lead-paragraph">
               完全予約制・マンツーマン施術のプライベートサロンです。
             </p>
           </div>
+        </div>
+
+        <!-- 3つの特徴（画像＋短い見出し） -->
+        <div class="concept-features">
+          <!-- 特徴1 -->
+          <div class="concept-feature-item">
+            <div class="concept-feature-img">
+              <img src="images/concept-private-salon.webp" alt="完全予約制・マンツーマン施術">
+            </div>
+            <h3 class="concept-feature-title">
+              <span>完全予約制・マンツーマン施術</span>
+            </h3>
+          </div>
+          
+          <!-- 特徴2 -->
+          <div class="concept-feature-item">
+            <div class="concept-feature-img concept-feature-img--stylist">
+              <img src="images/concept-stylist.webp" alt="最初から最後まで同じスタイリストが担当">
+            </div>
+            <h3 class="concept-feature-title">
+              <span>最初から最後まで同じスタイリストが担当</span>
+            </h3>
+          </div>
+          
+          <!-- 特徴3 -->
+          <div class="concept-feature-item">
+            <div class="concept-feature-img">
+              <img src="images/concept.webp" alt="髪も頭皮も。ヘッドスパを取り入れたケア">
+            </div>
+            <h3 class="concept-feature-title">
+              <span>髪と頭皮をいたわるヘッドスパケア</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- LINEで予約するボタン -->
+        <div class="concept-btn-wrapper button-row">
+          <a class="button button-line" href="https://lin.ee/rGV6Q77" target="_blank" rel="noopener noreferrer">LINEで予約する</a>
         </div>
       </div>
     </section>
@@ -101,10 +187,12 @@
     <!-- menu-->
     <section class="section service-section" id="menu">
       <div class="inner">
-        <p class="section-label">Menu</p>
-        <h2 class="section-title">
-          髪も、頭皮も、お肌も。<br>
-          年齢に寄り添うケアを。
+        <h2>
+          <span class="section-label">Menu</span>
+          <span class="section-title">
+            髪も、頭皮も、お肌も。<br>
+            年齢に寄り添うケアを。
+          </span>
         </h2>
 
         <div class="service-list">
@@ -179,75 +267,147 @@
     <!-- owner-section-->
     <section class="section owner-section" id="stylist">
       <div class="inner">
+        <h2>
+          <span class="section-label">Stylist</span>
+          <span class="section-title">スタイリスト紹介</span>
+        </h2>
+
         <div class="profile-card">
           <div class="profile-image owner-image">
-            <img src="./images/stylist.webp" alt="オーナースタイリスト">
+            <img src="./images/stylist.webp" alt="オーナースタイリスト Fumiko Hanashiro">
           </div>
 
           <div class="profile-content owner-content">
-            <p class="section-label">Stylist</p>
-            <h2 class="section-title">一人ひとりに寄り添う、<br>マンツーマン施術。</h2>
             <p class="owner-name">Owner / Stylist</p>
-            <p class="section-text">
-              カウンセリングから仕上げまで、最初から最後まで丁寧に担当します。髪のこと、頭皮のこと、お肌のこと。年齢とともに変化するお悩みも、安心してご相談ください。<br>
-              初めての方も、どうぞお気軽にご相談ください。
-            </p>
+            <h3 class="profile-name">Fumiko Hanashiro</h3>
+            <dl class="profile-details">
+              <div class="profile-row">
+                <dt class="profile-label">美容師歴</dt>
+                <dd class="profile-value">28年</dd>
+              </div>
+              <div class="profile-row">
+                <dt class="profile-label">得意な技術</dt>
+                <dd class="profile-value"><span class="inline-block">大人女性の</span><span class="inline-block">髪のお悩みに</span><span class="inline-block">合わせた</span><span class="inline-block">カット・カラー、</span><br class="pc-br"><span class="inline-block">ヘッドスパ、</span><span class="inline-block">セット、</span><span class="inline-block">着付け</span></dd>
+              </div>
+              <div class="profile-row">
+                <dt class="profile-label">Message</dt>
+                <dd class="profile-value">
+                  <span class="inline-block">カウンセリングから</span><span class="inline-block">仕上げまで、</span><span class="inline-block">丁寧に担当します。</span><span class="inline-block">髪のこと、</span><span class="inline-block">頭皮のこと、</span><span class="inline-block">お肌のこと。</span><span class="inline-block">年齢とともに</span><span class="inline-block">変化するお悩みも、</span><span class="inline-block">安心して</span><span class="inline-block">ご相談ください。</span><br>
+                  <span class="inline-block">初めての方も、</span><span class="inline-block">どうぞお気軽に</span><span class="inline-block">ご相談ください。</span>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- salon-section-->
+    <section class="section salon-section" id="salon">
+      <div class="inner">
+        <h2>
+          <span class="section-label">Salon</span>
+          <span class="section-title">サロン紹介</span>
+        </h2>
+
+        <div class="salon-grid">
+          <div class="salon-item">
+            <div class="salon-img">
+              <img src="images/salon-interior-detail.webp" alt="店内入口のシャンデリア">
+            </div>
+            <p class="salon-caption">店内入口</p>
+          </div>
+          <div class="salon-item">
+            <div class="salon-img">
+              <img src="images/concept-private-salon.webp" alt="施術スペース">
+            </div>
+            <p class="salon-caption">施術スペース</p>
+          </div>
+          <div class="salon-item">
+            <div class="salon-img">
+              <img src="images/salon-shampoo-space.webp" alt="シャンプー台">
+            </div>
+            <p class="salon-caption">シャンプー台</p>
+          </div>
+          <div class="salon-item">
+            <div class="salon-img">
+              <img src="images/salon-product-shelf.webp" alt="ヘアケア・美容商品のディスプレイ">
+            </div>
+            <p class="salon-caption">ヘアケア・美容商品</p>
+          </div>
+        </div>
+
+        <div class="salon-btn-wrapper">
+          <a class="button button-instagram" href="https://www.instagram.com/fuufleurs/" target="_blank" rel="noopener noreferrer" aria-label="Instagramを見る">
+            Instagramを見る
+          </a>
+        </div>
+      </div>
+    </section>
+
+
     <!-- access-->
     <section class="section access" id="access">
       <div class="inner">
-        <p class="section-label">Access</p>
-        <h2 class="section-title">店舗情報</h2>
-        <div class="access-table">
-          <div class="access-row">
-            <div class="access-head">住所</div>
-            <div class="access-body">〒903-0117<br>沖縄県中頭郡西原町翁長５６２−１</div>
-          </div>
+        <h2>
+          <span class="section-label">Access</span>
+          <span class="section-title">店舗情報</span>
+        </h2>
 
-          <div class="access-row">
-            <div class="access-head">電話番号</div>
-            <div class="access-body"><a href="tel:080-2775-8562" class="tel-link">080-2775-8562</a></div>
-          </div>
+        <div class="access-content">
+          <div class="access-table">
+            <div class="access-row">
+              <div class="access-head">住所</div>
+              <div class="access-body">〒903-0117<br><span class="inline-block">沖縄県中頭郡西原町</span><span class="inline-block">翁長５６２−１</span></div>
+            </div>
 
-          <div class="access-row">
-            <div class="access-head">駐車場</div>
-            <div class="access-body"><span>店舗前に2台分の駐車スペースが</span><span>ございます。</span></div>
-          </div>
+            <div class="access-row">
+              <div class="access-head">電話番号</div>
+              <div class="access-body">
+                <a href="tel:080-2775-8562" class="tel-link">080-2775-8562</a>
+                <span class="tel-text">080-2775-8562</span>
+                <span class="access-note">施術中はお電話に出られない場合がございます。</span>
+              </div>
+            </div>
 
-          <div class="access-row">
-            <div class="access-head">ご予約</div>
-            <div class="access-body">完全予約制</div>
-          </div>
+            <div class="access-row">
+              <div class="access-head">駐車場</div>
+              <div class="access-body"><span>店舗前に2台分の駐車スペースが</span><span>ございます。</span></div>
+            </div>
 
-          <div class="access-row">
-            <div class="access-head">営業時間</div>
-            <div class="access-body">10:00 - 21:00</div>
-          </div>
+            <div class="access-row">
+              <div class="access-head">ご予約</div>
+              <div class="access-body">完全予約制</div>
+            </div>
 
-          <div class="access-row">
-            <div class="access-head">定休日</div>
-            <div class="access-body">不定休</div>
+            <div class="access-row">
+              <div class="access-head">営業時間</div>
+              <div class="access-body">10:00 - 21:00</div>
+            </div>
+
+            <div class="access-row">
+              <div class="access-head">定休日</div>
+              <div class="access-body">不定休</div>
+            </div>
           </div>
-        </div>
-        <div class="map-box">
-          <iframe
-            src="https://www.google.com/maps?q=fuu%20fleurs%20%E3%80%92903-0117%20%E6%B2%96%E7%B8%84%E7%9C%8C%E4%B8%AD%E9%A0%AD%E9%83%A1%E8%A5%BF%E5%8E%9F%E7%94%BA%E7%BF%81%E9%95%B7%EF%BC%95%EF%BC%96%EF%BC%92%E2%88%92%EF%BC%91&output=embed"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="fuu fleursの地図">
-          </iframe>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=fuu%20fleurs%20%E3%80%92903-0117%20%E6%B2%96%E7%B8%84%E7%9C%8C%E4%B8%AD%E9%A0%AD%E9%83%A1%E8%A5%BF%E5%8E%9F%E7%94%BA%E7%BF%81%E9%95%B7%EF%BC%95%EF%BC%96%EF%BC%92%E2%88%92%EF%BC%91&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="fuu fleursの地図">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- contact-->
-    <section class="section reservation" id="contact">
+    <section class="section contact" id="contact">
       <div class="inner">
-        <p class="section-label">Contact</p>
-        <h2 class="section-title">ご予約・ご相談は<br>LINEから。</h2>
+        <h2>
+          <span class="section-label">Contact</span>
+          <span class="section-title"><span class="inline-block">ご予約・ご相談は</span><span class="inline-block">LINEから。</span></span>
+        </h2>
         <p class="contact-text">
           <span>施術中は返信にお時間をいただく<br class="sp-br">場合がございます。</span>
           <span>髪や頭皮のお悩みも、LINEから<br class="sp-br">お気軽にご相談ください。</span>
@@ -278,15 +438,24 @@
         </a>
       </nav>
       <div class="footer-nav">
-        <a href="#concept">Concept</a>
-        <a href="#menu">Menu</a>
-        <a href="#stylist">Stylist</a>
-        <a href="#access">Access</a>
-        <a href="#contact">Contact</a>
+        <a href="#concept">サロンについて</a>
+        <a href="#menu">メニュー・料金</a>
+        <a href="#stylist">スタイリスト</a>
+        <a href="#salon">サロン紹介</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">ご予約・相談</a>
       </div>
       <p class="copy">© fuu fleurs</p>
     </div>
   </footer>
+
+  <!-- ページトップへ戻るボタン -->
+  <a href="#top" class="page-top-btn" aria-label="ページトップへ戻る">
+    <svg class="page-top-chevron" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M1 7L7 1L13 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="page-top-text">TOP</span>
+  </a>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
