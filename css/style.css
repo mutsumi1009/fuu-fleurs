@@ -1232,16 +1232,6 @@ a {
     }
 }
 
-.service-note span {
-    display: inline;
-}
-
-@media screen and (min-width: 900px) {
-    .service-note span {
-        display: block;
-    }
-}
-
 .menu-note {
     margin: 28px 0 16px;
     font-size: 15px;
@@ -1771,9 +1761,7 @@ a {
     }
 
     .footer-nav {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        gap: 12px 10px;
+        gap: 12px 16px;
     }
     
     .footer-nav a {
