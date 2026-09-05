@@ -1447,18 +1447,18 @@ a {
     margin-inline: auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 899px) {
+@media screen and (min-width: 768px) {
     .profile-card {
-        max-width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+        margin-top: 40px;
     }
 }
 
 @media screen and (min-width: 900px) {
     .profile-card {
-        flex-direction: row;
-        align-items: flex-start;
         gap: 50px;
-        margin-top: 40px;
     }
 }
 
@@ -1467,27 +1467,18 @@ a {
     box-shadow: 0 16px 36px rgba(92, 74, 55, 0.12);
 }
 
-@media screen and (min-width: 768px) and (max-width: 899px) {
+@media screen and (min-width: 768px) {
     .profile-image {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .profile-image {
-        width: 360px;
         height: 400px;
         flex-shrink: 0;
     }
 }
 
 .profile-image img {
-    width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     .profile-image img {
         height: 100%;
     }
@@ -1498,7 +1489,7 @@ a {
     flex-direction: column;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     .profile-content {
         flex: 1;
     }
