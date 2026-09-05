@@ -1171,17 +1171,19 @@ a {
     }
 }
 
+
 .service-list {
     display: grid;
     gap: 16px;
     margin-top: 30px;
+    margin-inline: auto;
 }
 
 @media screen and (min-width: 900px) {
     .service-list {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        max-width: 960px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+        max-width: 920px;
         margin-inline: auto;
         margin-top: 40px;
     }
@@ -1312,6 +1314,10 @@ a {
     .service-note {
         text-align: center;
         font-size: 1.4rem;
+        min-height: calc(3.4em + 10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
