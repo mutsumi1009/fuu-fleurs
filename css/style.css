@@ -743,20 +743,12 @@ a {
 }
 
 .hero-title {
-    font-family: "Marcellus", "Cormorant Garamond", serif;
-    font-size: clamp(4.2rem, 7vw, 5.2rem);
-    line-height: 1.18;
-    letter-spacing: 0.045em;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: var(--brown);
-    text-shadow: 0 2px 16px rgba(255, 255, 255, 0.92);
+    margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) {
-    .hero-title {
-        font-size: 6.4rem;
-    }
+.hero-title img {
+    width: clamp(170px, 26vw, 260px);
+    height: auto;
 }
 
 .hero-lead {
